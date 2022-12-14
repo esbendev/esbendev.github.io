@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondo {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.fondo_parte-azul {
+    width: 100%;
+    height: 40%;
+    background-color: #555EFF;
+}
+
+.fondo_gatos {
+    display: none;
+}
+
+.fondo_parte-blanca {
+    width: 100%;
+    height: 60%;
+    background-color: white;
+}
+
+.tarjeta {
+    max-width: 400px;
+    height: max-content;
+    /*border: 1px solid black;*/
+    margin-top: 20px;
+    /* padding: 15px 20px; */
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+
+.nombre-de-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nombre-de-usuario>p {
+    font-weight: bold;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px 0px 20px;
+}
+
+.descripcion>p {
+    text-align: center;
+    line-height: 22px;
+}
+
+.firma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.botones-redes-sociales {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-red-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.boton-tiktok {
+    background-color: #000000;
+}
+
+.boton-youtube {
+    background-color: #FF0000;
+}
+
+.boton-twitter {
+    background-color: #1A8CD8;
+}
+
+.boton-instagram {
+    background-color: #F1C057;
+}
+
+.boton-facebook {
+    background-color: #1877F2;
+}
+
+.boton-github {
+    background-color: #23272D;
+}
+
+.boton-linkedin {
+    background-color: #026EAA;
+}
+
+.boton-paypal {
+    background-color: #032D7F;
+}
+
+.boton-cashapp {
+    background-color: #00CB2F;
+}
+
+@media (min-width: 900px) {
+    main {
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    .tarjeta {
+        margin-top: 0px;
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .descripcion {
+        flex-direction: column-reverse;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .nombre-de-usuario {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .botones-redes-sociales {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .firma {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .boton-tiktok {
+        border-top-right-radius: 15px;
+    }
+}
+
+@media (min-width: 1124px){
+    .fondo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fondo_gatos{
+        display: flex;
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        justify-content: space-between;
+        max-width: 1277px;
+    }
+}
