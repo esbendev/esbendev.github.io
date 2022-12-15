@@ -18,7 +18,7 @@ main {
 
 .mensaje-de-curso {
     position: absolute;
-    top: -80px;
+    top: -100%;
     width: 100vw;
     height: max-content;
     padding: 10px;
@@ -26,13 +26,15 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background: black;
     color: white;
     animation: mostrarMensajeCurso 0.4s ease-in 2s forwards;
 }
 
 .boton-curso {
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin-top: 10px;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -41,7 +43,7 @@ main {
 
 @keyframes mostrarMensajeCurso {
     from {
-        top: -80px;
+        top: -100%;
     }
 
     to {
@@ -73,10 +75,11 @@ main {
 }
 
 .tarjeta {
-    max-width: 400px;
+    max-width: 320px;
     height: max-content;
     /*border: 1px solid black;*/
     margin-top: 20px;
+    margin-bottom: 20px;
     /* padding: 15px 20px; */
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -91,8 +94,12 @@ main {
         }
 
         to {
-            margin-top: 80px;
+            margin-top: 100px;
         }
+    }
+
+    .tarjeta {
+        margin-bottom: 20px;
     }
 }
 
@@ -182,6 +189,15 @@ main {
     main {
         min-height: 100vh;
         justify-content: center;
+    }
+
+    .mensaje-de-curso {
+        flex-direction: row;
+    }
+    
+    .boton-curso {
+        margin-left: 10px;
+        margin-top: 0px;
     }
 
     .tarjeta {
