@@ -3,7 +3,7 @@ function initColores() {
         document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
     } else {
         document.documentElement.setAttribute('data-theme', 'reset');
-        guardarColores();
+        guardarColores(botones,btnReset,'reset');
     }
     // document.documentElement.setAttribute('data-theme', 'reset');
 }
