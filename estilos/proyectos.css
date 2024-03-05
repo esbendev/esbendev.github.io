@@ -1,0 +1,110 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    background-color: var(--color-fondo-generico-transparencia);
+}
+
+a.boton-volver {
+    font-size: 2rem;
+    padding-right: 1rem;
+    text-decoration: none;
+}
+
+.proyectos-container {
+    margin: 4rem 0 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    background-color: var(--color-fondo-generico-transparencia);
+}
+
+.proyecto h2 {
+    color: var(--color-secundario)
+}
+
+.links-proyecto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+a.boton-link {
+    padding: .5rem 1rem;
+    margin: .5rem;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-primario);
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+    background-color: var(--color-terciario);
+    color: var(--color-primario)
+}
+
+a.boton-link:hover {
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+}
+
+div.proyecto-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    gap: .5rem;
+}
+
+span.tec-usada {
+    padding: .2rem .4rem;
+    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+}
+
+@media (min-width: 800px) {
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    img.foto-principal {
+        width: 50%;
+    }
+
+    nav.menu-principal ul.menu-redes {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .proyectos-container {
+        margin: 8rem 0 4rem 0;
+        max-width: 1200px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .proyecto {
+        max-width: 350px;
+    }
+}

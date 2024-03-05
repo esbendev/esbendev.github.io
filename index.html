@@ -2,30 +2,29 @@
 <html lang="es">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
-    <title>@esbendev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@esbendev - Ben Smith</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./estilos/colores.css">
+    <link rel="stylesheet" href="./estilos/general.css">
+    <link rel="stylesheet" href="./estilos/inicio.css">
+    <link rel="stylesheet" href="./estilos/animate.css">
     <link rel="icon" type="image/x-icon" href="./favicon.png">
-
     <meta name="description"
         content="Soy un programador freelancer con una pequeña empresa de diseño web llamada SCNC Tech. También trabajo como programador, codeando en PHP, Python, Dart y C#.net." />
-
     <meta property="og:title" content="@esbendev" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://esbendev.com/esbendev-opengraph.png" />
     <meta property="og:description"
         content="Soy un programador freelancer con una pequeña empresa de diseño web llamada SCNC Tech. También trabajo como programador, codeando en PHP, Python, Dart y C#.net.">
-
     <meta property="twitter:title" content="@esbendev">
     <meta property="twitter:description"
         content="Soy un programador freelancer con una pequeña empresa de diseño web llamada SCNC Tech. También trabajo como programador, codeando en PHP, Python, Dart y C#.net." />
     <meta property="twitter:image" content="https://esbendev.com/esbendev-opengraph.png">
     <meta name="twitter:card" content="summary_large_image">
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-475SSTM0WC"></script>
     <script>
@@ -35,59 +34,70 @@
 
         gtag('config', 'G-475SSTM0WC');
     </script>
-
 </head>
 
-<body>
+<body onload="initColores()">
+    <div class="controles-para-editar animate__animated animate__fadeInDown animate__delay-1s">
+        <h3>¡Elegí tus colores!</h3>
+        <div class="botones-controles">
+            <button class="btn-opcion1"></button>
+            <button class="btn-opcion2"></button>
+            <button class="btn-opcion3"></button>
+            <a href="#" class="btn-reset">Reset</a>
+        </div>
+    </div>
+
+    <div class="contenedor-boton-menu-derecho animate__animated animate__slideInRight animate__delay-1s">
+        <a href="proyectos.html" class="boton-menu">proyectos</a>
+    </div>
     <main>
-        <div class="mensaje-de-curso">
-            <p>Aprendé como hice este sitio web desde cero y gratis!</p>
-            <a target="_blank" class="boton-curso"
-                href="https://www.youtube.com/playlist?list=PLXb5K7gz-aPjYV1vBbraFMEm53rLpZLgb">Haz click aquí</a>
-        </div>
-        <div class="fondo">
-            <div class="fondo_parte-azul"></div>
-            <div class="fondo_gatos">
-                <img src="./aruma.png" alt="Foto de aruma, un gato">
-                <img src="./aquiles.png" alt="Foto de aquiles, un gato">
+        <header>
+            <div class="texto">
+                <h1 class="titulo-principal animate__animated animate__bounceIn">@esbendev</h1>
+                <h2 class="animate__animated animate__bounceIn">Benjamín Smith</h2>
+                <p class="animate__animated animate__bounceIn">Soy un programador freelancer con una pequeña empresa de
+                    diseño web llamada <a href="https://scnctech.com/inicio">SCNC Tech</a>. También trabajo
+                    como programador, codeando en PHP, Python, Dart y C#.net.</p>
             </div>
-            <div class="fondo_parte-blanca"></div>
-        </div>
-        <div class="tarjeta">
-            <div class="nombre-de-usuario">
-                <p>@esbendev</p>
-            </div>
-            <div class="descripcion">
-                <p>Soy un programador freelancer con una pequeña empresa de diseño web llamada SCNC Tech. También
-                    trabajo como programador, codeando en PHP, Python, Dart y C#.net.</p>
-                <img src="imagen-de-perfil.svg" alt="Imagen de perfil de esbendev">
-                <a href="en.html">English version</a>
-            </div>
-            <div class="botones-redes-sociales">
-                <a target="_blank" href="https://www.tiktok.com/@esbendev"
-                    class="boton-red-social boton-tiktok">TikTok</a>
-                <a target="_blank" href="https://www.youtube.com/@esbendev"
-                    class="boton-red-social boton-youtube">Youtube</a>
-                <a target="_blank" href="https://twitter.com/esbendev"
-                    class="boton-red-social boton-twitter">Twitter</a>
-                <a target="_blank" href="https://www.instagram.com/esbendev"
-                    class="boton-red-social boton-instagram">Instagram</a>
-                <a target="_blank" href="https://www.facebook.com/bensmithperez1"
-                    class="boton-red-social boton-facebook">Facebook</a>
-                <a target="_blank" href="https://github.com/bensmithperez"
-                    class="boton-red-social boton-github">Github</a>
-                <a target="_blank" href="https://www.linkedin.com/in/bensmithperez"
-                    class="boton-red-social boton-linkedin">Linkedin</a>
-                <a target="_blank" href="https://www.paypal.com/paypalme/bensmithperez"
-                    class="boton-red-social boton-paypal">Paypal</a>
-                <a target="_blank" href="https://cash.app/$bensmithperez"
-                    class="boton-red-social boton-cashapp">CashApp</a>
-            </div>
-            <div class="firma">
-                <p>Benjamín Smith 2024</p>
-            </div>
-        </div>
+            <!-- <picture> -->
+            <img class="foto-principal animate__animated animate__fadeIn" src="./imagenes/esbendev.png"
+                alt="@esbendev - Ben Smith">
+            <!-- <source srcset="./imagenes/esbendev.webp" type="image/webp"> -->
+            <!-- </picture> -->
+        </header>
     </main>
+    <nav class="menu-principal animate__animated animate__slideInUp animate__delay-1s">
+        <ul class="menu-redes">
+            <li><a href="https://youtube.com/@esbendev">Youtube</a></li>
+            <li><a href="https:tiktok.com/@esbendev">TikTok</a></li>
+            <li><a href="https://twitter.com/esbendev">Twitter</a></li>
+            <li><a href="https://github.com/esbendev">Github</a></li>
+        </ul>
+    </nav>
 </body>
+<script>
+    const btnOpcion1 = document.querySelector('.btn-opcion1');
+    const btnOpcion2 = document.querySelector('.btn-opcion2');
+    const btnOpcion3 = document.querySelector('.btn-opcion3');
+    const btnReset = document.querySelector('.btn-reset');
+    const botones = [btnOpcion1, btnOpcion2, btnOpcion3, btnReset];
+
+    btnOpcion1.addEventListener('click', () => {
+        guardarColores(botones,btnOpcion1,'opcion1');
+    });
+
+    btnOpcion2.addEventListener('click', () => {
+        guardarColores(botones,btnOpcion2,'opcion2');
+    });
+
+    btnOpcion3.addEventListener('click', () => {
+        guardarColores(botones,btnOpcion3,'opcion3');
+    });
+
+    btnReset.addEventListener('click', () => {
+        guardarColores(botones,btnReset,'reset');
+    });
+</script>
+<script src="./js/colores.js"></script>
 
 </html>

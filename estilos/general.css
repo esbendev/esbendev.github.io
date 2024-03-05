@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: var(--color-primario); */
+    background-color: var(--color-primario);
+    background-image: linear-gradient(120deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--color-primario)
+}
+
+h2 {
+    font-size: 1.8rem;
+    padding: 0rem;
+    letter-spacing: 1.6px;
+    color: var(--color-primario);
+}
+
+p {
+    font-size: 1.3rem;
+    letter-spacing: 1.6px;
+    color: var(--color-secundario);
+}
+
+a {
+    text-decoration: dashed underline var(--color-primario);
+    color: var(--color-primario);
+}
+
+nav.menu-principal {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--color-fondo-generico-transparencia);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+nav.menu-principal ul.menu-redes {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav.menu-principal ul.menu-redes li a {
+    text-decoration: none;
+    color: var(--color-primario);
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+}
+
+nav.menu-principal ul.menu-redes li a:hover {
+    font-weight: bold;
+}
+
+header>p {
+    padding: 0 0.8rem;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    header {
+        padding: 1rem;
+    }
+
+    nav.menu-principal {
+        background-color: var(--color-fondo-generico-solido);
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        transition: background-color 0.5s;
+    }
+
+    * {
+        transition: color 0.5s;
+    }
+}
