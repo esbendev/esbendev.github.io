@@ -8,10 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./estilos/colores.css">
     <link rel="stylesheet" href="./estilos/general.css">
-    <link rel="stylesheet" href="./estilos/inicio.css">
-    <link rel="stylesheet" href="./estilos/animate.css">
     <link rel="icon" type="image/x-icon" href="./favicon.png">
     <meta name="description"
         content="Soy un programador freelancer con una pequeña empresa de diseño web llamada SCNC Tech. También trabajo como programador, codeando en PHP, Python, Dart y C#.net." />
@@ -36,68 +33,101 @@
     </script>
 </head>
 
-<body onload="initColores()">
-    <div class="controles-para-editar animate__animated animate__fadeInDown animate__delay-1s">
-        <h3>¡Elegí tus colores!</h3>
-        <div class="botones-controles">
-            <button class="btn-opcion1"></button>
-            <button class="btn-opcion2"></button>
-            <button class="btn-opcion3"></button>
-            <a href="#" class="btn-reset">Reset</a>
+<body>
+    <header>
+        <div class="header-imagen">
+            <img src="./imagenes/esbendev.png" alt="Ben Smith">
         </div>
-    </div>
-
-    <div class="contenedor-boton-menu-derecho animate__animated animate__slideInRight animate__delay-1s">
-        <a href="proyectos.html" class="boton-menu">proyectos</a>
-    </div>
-    <main>
-        <header>
-            <div class="texto">
-                <h1 class="titulo-principal animate__animated animate__bounceIn">@esbendev</h1>
-                <h2 class="animate__animated animate__bounceIn">Benjamín Smith</h2>
-                <p class="animate__animated animate__bounceIn">Soy un programador freelancer con una pequeña empresa de
-                    diseño web llamada <a href="https://scnctech.com/inicio">SCNC Tech</a>. También trabajo
-                    como programador, codeando en PHP, Python, Dart y C#.net.</p>
+        <div class="header-tarjeta">
+            <h1>Ben Smith <span class="h1-handle">@esbendev</span></h1>
+            <p>Soy un programador freelancer con una pequeña empresa de diseño web llamada <a
+                    href="https://scnctech.com/inicio">SCNC Tech</a>. También trabajo como
+                programador, codeando en <span class="lenguaje-programacion">PHP</span>, <span
+                    class="lenguaje-programacion">Python</span>, <span class="lenguaje-programacion">Dart</span> y <span
+                    class="lenguaje-programacion">C#.net</span>.</p>
+            <div class="header-tarjeta-redes">
+                <a href="https://youtube.com/@esbendev" target="_blank">Youtube</a>
+                <a href="https://github.com/esbendev" target="_blank">Github</a>
+                <a href="https://twitter.com/esbendev" target="_blank">Twitter</a>
+                <a href="https://instagram.com/esbendev" target="_blank">Instagram</a>
+                <a href="https://tiktok.com/@esbendev" target="_blank">TikTok</a>
             </div>
-            <!-- <picture> -->
-            <img class="foto-principal animate__animated animate__fadeIn" src="./imagenes/esbendev.png"
-                alt="@esbendev - Ben Smith">
-            <!-- <source srcset="./imagenes/esbendev.webp" type="image/webp"> -->
-            <!-- </picture> -->
-        </header>
-    </main>
-    <nav class="menu-principal animate__animated animate__slideInUp animate__delay-1s">
-        <ul class="menu-redes">
-            <li><a href="https://youtube.com/@esbendev">Youtube</a></li>
-            <li><a href="https:tiktok.com/@esbendev">TikTok</a></li>
-            <li><a href="https://twitter.com/esbendev">Twitter</a></li>
-            <li><a href="https://github.com/esbendev">Github</a></li>
-        </ul>
-    </nav>
+        </div>
+    </header>
+    <section id="videos">
+        <h2>Videos Recientes</h2>
+        <div class="lista-videos">
+            <!-- puedo descargar las imagenes de -->
+            <!-- https://i.ytimg.com/vi_webp/{videoID}/maxresdefault.webp -->
+            <!-- https://i.ytimg.com/vi/{videoID}/maxresdefault.jpeg -->
+            <div class="tarjeta-video">
+                <a href="https://www.youtube.com/watch?v=Pj94ikO7rro" target="_blank">
+                    <img src="./imagenes/thumbnails/Pj94ikO7rro.jpg" alt="Navegadores que usen poco RAM">
+                    <h3>Navegadores que usen poco RAM</h3>
+                </a>
+            </div>
+            <div class="tarjeta-video">
+                <a href="https://www.youtube.com/watch?v=A8op1ZjtTpc" target="_blank">
+                    <img src="./imagenes/thumbnails/A8op1ZjtTpc.jpg" alt="¿Qué es Flock? ¿Qué pasa con Flutter?">
+                    <h3>¿Qué es Flock? ¿Qué pasa con Flutter?</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="cursos">
+        <h2>Cursos</h2>
+        <div class="lista-cursos">
+            <div class="tarjeta-curso">
+                <a href="https://www.youtube.com/playlist?list=PLXb5K7gz-aPjYV1vBbraFMEm53rLpZLgb" target="_blank">
+                    <img src="./imagenes/cursos/MLsEfCrBcPY.jpg" alt="Tutorial - Diseño Web">
+                    <h3>Tutorial - Diseño Web</h3>
+                </a>
+            </div>
+    </section>
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="lista-proyectos">
+            <div class="tarjeta-proyecto">
+                <a href="https://esbendev.com/cuando-juega" target="_blank">
+                    <img src="./imagenes/proyectos/cuando-juega.png" alt="¿Cuándo Juega?">
+                    <h3>¿Cuándo Juega?</h3>
+                </a>
+            </div>
+            <div class="tarjeta-proyecto">
+                <a href="https://esbendev.com/2v2sday" target="_blank">
+                    <img src="./imagenes/proyectos/2v2sday.png" alt="2v2sday">
+                    <h3>2v2sday</h3>
+                </a>
+            </div>
+            <div class="tarjeta-proyecto">
+                <a href="https://esbendev.com/sitio-homero" target="_blank">
+                    <img src="./imagenes/proyectos/pagina-homero.png" alt="Página de Homero">
+                    <h3>Página de Homero</h3>
+                </a>
+            </div>
+    </section>
+    <footer>
+        <p>Ben Smith - SCNC Tech, LLC</p>
+    </footer>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mainIndex = document.getElementsByClassName('main-index')[0];
+            const colors = ['color-1', 'color-2', 'color-3', 'color-4', 'color-5']; // Add more classes as needed
+            let previousColor = localStorage.getItem('previousColor');
+            let randomColor;
+
+            do {
+                randomColor = colors[Math.floor(Math.random() * colors.length)];
+            } while (randomColor === previousColor);
+
+            mainIndex.classList.add(randomColor);
+            // add color to all headings
+            document.querySelectorAll('h1, h2').forEach(heading => {
+                heading.classList.add(randomColor);
+            });
+            localStorage.setItem('previousColor', randomColor);
+        });
+    </script> -->
 </body>
-<script>
-    const btnOpcion1 = document.querySelector('.btn-opcion1');
-    const btnOpcion2 = document.querySelector('.btn-opcion2');
-    const btnOpcion3 = document.querySelector('.btn-opcion3');
-    const btnReset = document.querySelector('.btn-reset');
-    const botones = [btnOpcion1, btnOpcion2, btnOpcion3, btnReset];
-
-    btnOpcion1.addEventListener('click', () => {
-        guardarColores(botones,btnOpcion1,'opcion1');
-    });
-
-    btnOpcion2.addEventListener('click', () => {
-        guardarColores(botones,btnOpcion2,'opcion2');
-    });
-
-    btnOpcion3.addEventListener('click', () => {
-        guardarColores(botones,btnOpcion3,'opcion3');
-    });
-
-    btnReset.addEventListener('click', () => {
-        guardarColores(botones,btnReset,'reset');
-    });
-</script>
-<script src="./js/colores.js"></script>
 
 </html>
