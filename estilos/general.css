@@ -143,7 +143,7 @@ div.lista-proyectos {
 div.lista-videos>div.tarjeta-video,
 div.lista-cursos>div.tarjeta-curso,
 div.lista-proyectos>div.tarjeta-proyecto {
-  background-color: #7b69e1;
+  background-color: #4c37bf;
   margin: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
