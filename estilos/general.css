@@ -126,5 +126,9 @@ div.ventana-terminal > ul > li::before {
     position: relative;
     content: "ben@yt:~$";
   }
+
+  span.cabezal{
+    margin-right: 0.5rem;
+  }
 }
 
