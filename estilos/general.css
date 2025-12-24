@@ -46,7 +46,7 @@ span.cabezal {
   border-radius: .4rem;
 }
 
-span.cabezal::before{
+span.cabezal::before {
   position: relative;
   content: "esbendev@youtube:~$";
 }
@@ -90,13 +90,13 @@ input.input-terminal {
   margin: 0;
 }
 
-div.ventana-terminal > ul{
+div.ventana-terminal>ul {
   list-style-type: none;
   margin-left: 0.5rem;
   margin-top: -1rem;
 }
 
-div.ventana-terminal > ul > li::before {
+div.ventana-terminal>ul>li::before {
   position: relative;
   content: "- ";
 }
@@ -110,6 +110,11 @@ div.ventana-terminal > ul > li::before {
 
 /* responsive */
 @media (max-width: 600px) {
+  body,
+  html {
+    font-size: 0.9rem;
+  }
+
   div.fondo-con-umi {
     padding: 0.5rem;
   }
@@ -122,13 +127,12 @@ div.ventana-terminal > ul > li::before {
     font-size: 0.4rem;
   }
 
-  span.cabezal::before{
+  span.cabezal::before {
     position: relative;
     content: "ben@yt:~$";
   }
 
-  span.cabezal{
+  span.cabezal {
     margin-right: 0.5rem;
   }
 }
-
