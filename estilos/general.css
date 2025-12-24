@@ -46,6 +46,11 @@ span.cabezal {
   border-radius: .4rem;
 }
 
+span.cabezal::before{
+  position: relative;
+  content: "esbendev@youtube:~$";
+}
+
 div.ventana-terminal p {
   margin-bottom: 1rem;
 }
@@ -102,3 +107,24 @@ div.ventana-terminal > ul > li::before {
   border-radius: .4rem;
   text-decoration: none;
 }
+
+/* responsive */
+@media (max-width: 600px) {
+  div.fondo-con-umi {
+    padding: 0.5rem;
+  }
+
+  div.ventana-terminal {
+    padding: 0.5rem .3rem;
+  }
+
+  .nombre-dibujado {
+    font-size: 0.4rem;
+  }
+
+  span.cabezal::before{
+    position: relative;
+    content: "ben@yt:~$";
+  }
+}
+

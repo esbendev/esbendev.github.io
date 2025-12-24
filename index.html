@@ -37,11 +37,11 @@
 <body>
     <div class="fondo-con-umi">
         <div class="ventana-terminal">
-            <p><span class="cabezal">esbendev@internet:~$</span>ls</p>
+            <p><span class="cabezal"></span>ls</p>
             <p>acerca-de.txt lista-de-distros.txt contacto.txt</p>
-            <p><span class="cabezal">esbendev@internet:~$</span>cat acerca-de.txt contacto.txt</p>
+            <p><span class="cabezal"></span>cat acerca-de.txt contacto.txt</p>
             <p>
-            <pre>           _                    _            
+            <pre class="nombre-dibujado">           _                    _            
   ___  ___| |__   ___ _ __   __| | _____   __
  / _ \/ __| '_ \ / _ \ '_ \ / _` |/ _ \ \ / /
 |  __/\__ \ |_) |  __/ | | | (_| |  __/\ V / 
@@ -64,7 +64,7 @@
             </p>
             <p>Lo más fácil es hablarme por mi <a target="_blank"
                     href="https://youtube.com/@esbendev/community">comunidad de Youtube</a>.</p>
-            <p><span class="cabezal">esbendev@internet:~$</span>cat lista-de-distros.txt</p>
+            <p><span class="cabezal"></span>cat lista-de-distros.txt</p>
             <p>Esta es la lista de distros que he visto:</p>
             <ul>
                 <li><a target="_blank"
@@ -89,29 +89,30 @@
             <br>
             <p>Para recomendarme alguna, dejame un post en mi <a target="_blank"
                     href="https://youtube.com/@esbendev/community">comunidad de Youtube</a>!</p>
-            <p><span class="cabezal">esbendev@internet:~$</span>
-                <input type="text" placeholder="" class="input-terminal" maxlength="15">
+            <p><span class="cabezal"></span>
+                <span class="blinking-cursor"></span>
+                <!-- <input type="text" placeholder="" class="input-terminal" maxlength="15"> -->
             </p>
 
         </div>
 
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const terminalInput = document.querySelector(".input-terminal");
-            terminalInput.focus();
-        });
+        // document.addEventListener("DOMContentLoaded", () => {
+        //     const terminalInput = document.querySelector(".input-terminal");
+        //     terminalInput.focus();
+        // });
 
-        document.addEventListener("click", () => {
-            const terminalInput = document.querySelector(".input-terminal");
-            terminalInput.focus();
-        });
+        // document.addEventListener("click", () => {
+        //     const terminalInput = document.querySelector(".input-terminal");
+        //     terminalInput.focus();
+        // });
 
-        document.querySelector(".input-terminal").addEventListener("keydown", (event) => {
-            if (event.key === "Enter") {
-                event.target.value = "";
-            }
-        });
+        // document.querySelector(".input-terminal").addEventListener("keydown", (event) => {
+        //     if (event.key === "Enter") {
+        //         event.target.value = "";
+        //     }
+        // });
     </script>
 </body>
 
