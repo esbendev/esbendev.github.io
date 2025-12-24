@@ -1,0 +1,184 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* font sizes */
+h1 {
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+p,
+a {
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+section{
+  background-color: white;
+}
+
+div.header-imagen {
+  background-color: #7b69e1;
+  background-image: linear-gradient(to top, #7b69e1, #9c8cf4);
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 50vh;
+}
+
+div.header-imagen>img {
+  width: 100%;
+  /* height: 100%; */
+  max-width: 400px;
+}
+
+div.header-tarjeta {
+  background-color: #ffffff;
+  padding: 1rem;
+  /* margin-top: -1rem; */
+  text-align: center;
+}
+
+div.header-tarjeta>*{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+div.header-tarjeta a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #484848;
+  border-bottom: 3px solid #4c37bf;
+  /* border-bottom: 3px solid #7b69e1; */
+}
+
+div.header-tarjeta>h1 {
+  color: #000000;
+}
+
+div.header-tarjeta>p {
+  color: #484848;
+  border: 1px dashed black;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+div.header-tarjeta>h1>span.h1-handle {
+  display: block;
+  font-size: 1.1rem;
+}
+
+div.header-tarjeta>p>span.lenguaje-programacion {
+  font-weight: 600;
+}
+
+.header-tarjeta-redes {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 1rem; */
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+section#videos,
+section#cursos,
+section#proyectos {
+  padding: 2rem 0 0 0;
+}
+
+section#videos>h2,
+section#cursos>h2,
+section#proyectos>h2 {
+  text-align: center;
+}
+
+section#videos>h2::after,
+section#cursos>h2::after,
+section#proyectos>h2::after {
+  content: '';
+  display: block;
+  margin: 0.5rem auto;
+  width: 50px;
+  height: 3px;
+  background-color: #8b8b8b;
+}
+
+div.lista-videos,
+div.lista-cursos,
+div.lista-proyectos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.lista-videos>div.tarjeta-video,
+div.lista-cursos>div.tarjeta-curso,
+div.lista-proyectos>div.tarjeta-proyecto {
+  background-color: #4c37bf;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+div.lista-videos>div.tarjeta-video>a,
+div.lista-cursos>div.tarjeta-curso>a,
+div.lista-proyectos>div.tarjeta-proyecto>a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.lista-videos>div.tarjeta-video>a>img,
+div.lista-cursos>div.tarjeta-curso>a>img,
+div.lista-proyectos>div.tarjeta-proyecto>a>img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+div.lista-videos>div.tarjeta-video>a>h3,
+div.lista-cursos>div.tarjeta-curso>a>h3,
+div.lista-proyectos>div.tarjeta-proyecto>a>h3 {
+  display: inline;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
